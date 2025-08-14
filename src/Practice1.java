@@ -15,6 +15,7 @@ public static double AreaTriangle(){
 	return h*b/2;
 }
 public static void main(String[] args) {
+	//System.out.println(AreaCircle());
 	System.out.println(AreaTriangle());
 }
 }

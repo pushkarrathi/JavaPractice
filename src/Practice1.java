@@ -14,8 +14,16 @@ public static double AreaTriangle(){
 	double b = sc.nextDouble();
 	return h*b/2;
 }
+public static double AreaRectangle() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter length and width of rectangle");
+	double l = sc.nextDouble();
+	double w = sc.nextDouble();
+	return l*w;
+}
 public static void main(String[] args) {
 	//System.out.println(AreaCircle());
-	System.out.println(AreaTriangle());
+	//System.out.println(AreaTriangle());
+	System.out.println(AreaRectangle());
 }
 }

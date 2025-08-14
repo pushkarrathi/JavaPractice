@@ -35,12 +35,19 @@ public static double areaParallelogram() {
 	double h = sc.nextDouble();
 	return b*h;
 }
+public static double areaRhombus() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter diagonals of rhombus");
+	double d1 = sc.nextDouble();
+	double d2 = sc.nextDouble();
+	return d1*d2;
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
 	//System.out.println(areaRectangle());
 	//System.out.println(areaIsoceles());
-	System.out.println(areaParallelogram());
-
+	//System.out.println(areaParallelogram());
+	System.out.println(areaRhombus());
 }
 }

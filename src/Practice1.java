@@ -1,29 +1,37 @@
 import java.util.Scanner;
 
 public class Practice1 {
-public static double AreaCircle(){
+public static double areaCircle(){
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter radius of circle");
 	double r = sc.nextDouble();
 	return Math.PI*Math.pow(r,2);
 }
-public static double AreaTriangle(){
+public static double areaTriangle(){
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter height and base length of triangle");
 	double h = sc.nextDouble();
 	double b = sc.nextDouble();
 	return h*b/2;
 }
-public static double AreaRectangle() {
+public static double areaRectangle() {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter length and width of rectangle");
 	double l = sc.nextDouble();
 	double w = sc.nextDouble();
 	return l*w;
 }
+public static double areaIsoceles() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter Isoceles side and base side length");
+	double i = sc.nextDouble();
+	double b = sc.nextDouble();
+	return b*Math.pow(i*i - (b*b/4),0.5)/2;
+}
 public static void main(String[] args) {
-	//System.out.println(AreaCircle());
-	//System.out.println(AreaTriangle());
-	System.out.println(AreaRectangle());
+	//System.out.println(areaCircle());
+	//System.out.println(areaTriangle());
+	//System.out.println(areaRectangle());
+	System.out.println(areaIsoceles());
 }
 }

@@ -28,10 +28,19 @@ public static double areaIsoceles() {
 	double b = sc.nextDouble();
 	return b*Math.pow(i*i - (b*b/4),0.5)/2;
 }
+public static double areaParallelogram() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter base and height of parallelogram");
+	double b = sc.nextDouble();
+	double h = sc.nextDouble();
+	return b*h;
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
 	//System.out.println(areaRectangle());
-	System.out.println(areaIsoceles());
+	//System.out.println(areaIsoceles());
+	System.out.println(areaParallelogram());
+
 }
 }

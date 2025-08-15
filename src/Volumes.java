@@ -28,10 +28,19 @@ public static double volumeSphere() {
 	double r = sc.nextDouble();
 	return Math.PI*Math.pow(r,3)*4/3;
 }
+public static double volumePyramid() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter base length, base width and height of pyramid");
+	double bl = sc.nextDouble();
+	double bw = sc.nextDouble();
+	double h = sc.nextDouble();
+	return bl*bw*h/3;
+}
 public static void main(String[] args) {
-	//System.out.println(volumeCone());
-	//System.out.println(volumePrism());
-	//System.out.println(volumeCylinder());
+	System.out.println(volumeCone());
+	System.out.println(volumePrism());
+	System.out.println(volumeCylinder());
 	System.out.println(volumeSphere());
+	System.out.println(volumePyramid());
 }
 }

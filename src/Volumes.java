@@ -15,8 +15,23 @@ public static double volumePrism() {
 	double h = sc.nextDouble();
 	return ba*h;
 }
+public static double volumeCylinder() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter radius and height of cylinder");
+	double r = sc.nextDouble();
+	double h = sc.nextDouble();
+	return Math.PI*Math.pow(r,2)*h;
+}
+public static double volumeSphere() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter radius of sphere");
+	double r = sc.nextDouble();
+	return Math.PI*Math.pow(r,3)*4/3;
+}
 public static void main(String[] args) {
-	System.out.println(volumeCone());
-	System.out.println(volumePrism());
+	//System.out.println(volumeCone());
+	//System.out.println(volumePrism());
+	//System.out.println(volumeCylinder());
+	System.out.println(volumeSphere());
 }
 }

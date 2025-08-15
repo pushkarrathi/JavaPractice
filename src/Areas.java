@@ -48,13 +48,28 @@ public static double areaEquilateralTriangle() {
 	double s = sc.nextDouble();
 	return Math.pow(3,0.5)*s*s/4;
 }
+public static double CSA_cylinder() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter radius and height of cylinder");
+	double r = sc.nextDouble();
+	double h = sc.nextDouble();
+	return 2*Math.PI*r*h;
+}
+public static double TSA_Square() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter side of square");
+	double s = sc.nextDouble();
+	return 6*Math.pow(s,2);
+}
 public static void main(String[] args) {
-	System.out.println(areaCircle());
-	System.out.println(areaTriangle());
-	System.out.println(areaRectangle());
-	System.out.println(areaIsosceles());
-	System.out.println(areaParallelogram());
-	System.out.println(areaRhombus());
-	System.out.println(areaEquilateralTriangle());
+//	System.out.println(areaCircle());
+//	System.out.println(areaTriangle());
+//	System.out.println(areaRectangle());
+//	System.out.println(areaIsosceles());
+//	System.out.println(areaParallelogram());
+//	System.out.println(areaRhombus());
+//	System.out.println(areaEquilateralTriangle());
+	//System.out.println(CSA_cylinder());
+	System.out.println(TSA_Square());
 }
 }

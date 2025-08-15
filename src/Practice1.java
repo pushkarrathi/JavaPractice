@@ -54,6 +54,12 @@ public static double perimeterCircle() {
 	double r = sc.nextDouble();
 	return Math.PI*2*r;
 }
+public static double perimeterEquilateralTriangle() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter side of equilateral triangle:");
+	double s = sc.nextDouble();
+	return 3*s;
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
@@ -62,6 +68,7 @@ public static void main(String[] args) {
 	//System.out.println(areaParallelogram());
 	//System.out.println(areaRhombus());
 	//System.out.println(areaEquilateralTriangle());
-	System.out.println(perimeterCircle());
+	//System.out.println(perimeterCircle());
+	System.out.println(perimeterEquilateralTriangle());
 }
 }

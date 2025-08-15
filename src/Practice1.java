@@ -60,19 +60,25 @@ public static double perimeterEquilateralTriangle() {
 	double s = sc.nextDouble();
 	return 3*s;
 }
-public static double perimterParallelogram() {
+public static double perimeterParallelogram() {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter both sides of parallelogram");
 	double a = sc.nextDouble();
 	double b = sc.nextDouble();
 	return 2*(a + b);
 }
-public static double perimterRectangle() {
+public static double perimeterRectangle() {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter both sides of Rectangle");
 	double a = sc.nextDouble();
 	double b = sc.nextDouble();
 	return 2*(a + b);
+}
+public static double perimeterSquare() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter side of square:");
+	double s = sc.nextDouble();
+	return 4*s;
 }
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
@@ -84,7 +90,8 @@ public static void main(String[] args) {
 	//System.out.println(areaEquilateralTriangle());
 	//System.out.println(perimeterCircle());
 	//System.out.println(perimeterEquilateralTriangle());
-	//System.out.println(perimterParallelogram());
-	System.out.println(perimterRectangle());
+	//System.out.println(perimeterParallelogram());
+	//System.out.println(perimeterRectangle());
+	System.out.println(perimeterSquare());
 }
 }

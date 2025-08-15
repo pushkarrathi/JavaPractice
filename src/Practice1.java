@@ -60,15 +60,23 @@ public static double perimeterEquilateralTriangle() {
 	double s = sc.nextDouble();
 	return 3*s;
 }
+public static double perimterParallelogram() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter both sides of parallelogram");
+	double a = sc.nextDouble();
+	double b = sc.nextDouble();
+	return 2*(a + b);
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
 	//System.out.println(areaRectangle());
-	//System.out.println(areaIsoceles());
+	//System.out.println(areaIsosceles());
 	//System.out.println(areaParallelogram());
 	//System.out.println(areaRhombus());
 	//System.out.println(areaEquilateralTriangle());
 	//System.out.println(perimeterCircle());
-	System.out.println(perimeterEquilateralTriangle());
+	//System.out.println(perimeterEquilateralTriangle());
+	System.out.println(perimterParallelogram());
 }
 }

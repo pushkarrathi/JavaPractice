@@ -42,12 +42,19 @@ public static double areaRhombus() {
 	double d2 = sc.nextDouble();
 	return d1*d2;
 }
+public static double areaEquilateralTriangle() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter side of equilateral triangle:");
+	double s = sc.nextDouble();
+	return Math.pow(3,0.5)*s*s/4;
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
 	//System.out.println(areaRectangle());
 	//System.out.println(areaIsoceles());
 	//System.out.println(areaParallelogram());
-	System.out.println(areaRhombus());
+	//System.out.println(areaRhombus());
+	System.out.println(areaEquilateralTriangle());
 }
 }

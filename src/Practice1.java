@@ -80,6 +80,12 @@ public static double perimeterSquare() {
 	double s = sc.nextDouble();
 	return 4*s;
 }
+public static double perimeterRhombus() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter side of rhombus:");
+	double s = sc.nextDouble();
+	return 4*s;
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
@@ -92,6 +98,7 @@ public static void main(String[] args) {
 	//System.out.println(perimeterEquilateralTriangle());
 	//System.out.println(perimeterParallelogram());
 	//System.out.println(perimeterRectangle());
-	System.out.println(perimeterSquare());
+	//System.out.println(perimeterSquare());
+	System.out.println(perimeterRhombus());
 }
 }

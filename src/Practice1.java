@@ -67,6 +67,13 @@ public static double perimterParallelogram() {
 	double b = sc.nextDouble();
 	return 2*(a + b);
 }
+public static double perimterRectangle() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter both sides of Rectangle");
+	double a = sc.nextDouble();
+	double b = sc.nextDouble();
+	return 2*(a + b);
+}
 public static void main(String[] args) {
 	//System.out.println(areaCircle());
 	//System.out.println(areaTriangle());
@@ -77,6 +84,7 @@ public static void main(String[] args) {
 	//System.out.println(areaEquilateralTriangle());
 	//System.out.println(perimeterCircle());
 	//System.out.println(perimeterEquilateralTriangle());
-	System.out.println(perimterParallelogram());
+	//System.out.println(perimterParallelogram());
+	System.out.println(perimterRectangle());
 }
 }

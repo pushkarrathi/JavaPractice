@@ -62,14 +62,14 @@ public static double TSA_Square() {
 	return 6*Math.pow(s,2);
 }
 public static void main(String[] args) {
-//	System.out.println(areaCircle());
-//	System.out.println(areaTriangle());
-//	System.out.println(areaRectangle());
-//	System.out.println(areaIsosceles());
-//	System.out.println(areaParallelogram());
-//	System.out.println(areaRhombus());
-//	System.out.println(areaEquilateralTriangle());
-	//System.out.println(CSA_cylinder());
+	System.out.println(areaCircle());
+	System.out.println(areaTriangle());
+	System.out.println(areaRectangle());
+	System.out.println(areaIsosceles());
+	System.out.println(areaParallelogram());
+	System.out.println(areaRhombus());
+	System.out.println(areaEquilateralTriangle());
+	System.out.println(CSA_cylinder());
 	System.out.println(TSA_Square());
 }
 }
